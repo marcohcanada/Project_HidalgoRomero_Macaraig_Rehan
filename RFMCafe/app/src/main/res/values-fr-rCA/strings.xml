@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cancel">Annuler</string>
+    <string name="cream">Crème</string>
+    <string name="dark_roast">Torréfaction Foncée</string>
+    <string name="dom_lid">Couvercle de Dom</string>
+    <string name="done">Terminé</string>
+    <string name="espresso_shot">Tir Expresso</string>
+    <string name="fresh_vanilla">Vanille Fraîche</string>
+    <string name="iced_capp">Cappuccino Glacé</string>
+    <string name="order_amt">Montant de la Commande</string>
+    <string name="original_blend">Mélange Original</string>
+    <string name="place_order">Passez Une Autre Commande</string>
+    <string name="prompt">Comment voudrais-tu ton café?</string>
+    <string name="prompt_addon">S\'il vous plaît sélectionnez votre addon:</string>
+    <string name="prompt_name">S\'il vous plaît entrez votre nom</string>
+    <string name="sleeve">Manche</string>
+    <string name="submit">Soumettre</string>
+    <string name="sugar">Sucre</string>
+    <string name="whipped_cream">Crème Fouettée</string>
+    <string name="one">Un</string>
+    <string name="two">Deux</string>
+    <string name="three">Trois</string>
+    <string name="four">Quatre</string>
+    <string-array name="number_array">
+        <item>@string/one</item>
+        <item>@string/two</item>
+        <item>@string/three</item>
+        <item>@string/four</item>
+    </string-array>
+</resources>

@@ -1,19 +1,36 @@
 <resources>
-    <string name="app_name">RFMCafe</string>
-    <string name="title">RFM Cafe</string>
-    <string name="prompt">How would you like your coffee ?</string>
+    <string name="app_name" translatable="false">RFMCafe</string>
+    <string name="title" translatable="false">RFM Cafe</string>
+    <string name="prompt">How would you like your coffee?</string>
     <string name="dark_roast">Dark Roast</string>
-    <string name="original_blend">Original blend</string>
+    <string name="original_blend">Original Blend</string>
     <string name="fresh_vanilla">Fresh Vanilla</string>
-    <string name="iced_capp">Iced Capp</string>
+    <string name="iced_capp">Iced Cappuccino</string>
     <string name="cream">Cream</string>
     <string name="sugar">Sugar</string>
-    <string name="prompt_addon">Please select your addon ?</string>
+    <string name="prompt_addon">Please select your addon:</string>
     <string name="whipped_cream">Whipped Cream</string>
     <string name="dom_lid">Dom Lid</string>
     <string name="sleeve">Sleeve</string>
     <string name="espresso_shot">Espresso Shot</string>
-    <string name="prompt_name">Please Enter your Name</string>
+    <string name="prompt_name">Please enter your name</string>
+    <string name="prompt_email">Please enter your email address</string>
+    <string name="prompt_password">Please enter your password</string>
     <string name="cancel">Cancel</string>
     <string name="submit">Submit</string>
+    <string name="signup">Sign Up</string>
+    <string name="signin">Sign In</string>
+    <string name="order_amt">Order Amount</string>
+    <string name="done">Done</string>
+    <string name="place_order">Place Another Order</string>
+    <string name="one">One</string>
+    <string name="two">Two</string>
+    <string name="three">Three</string>
+    <string name="four">Four</string>
+    <string-array name="number_array">
+        <item>@string/one</item>
+        <item>@string/two</item>
+        <item>@string/three</item>
+        <item>@string/four</item>
+    </string-array>
 </resources>
