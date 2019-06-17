@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name" translatable="false">FeedbackApp</string>
+    <string name="title">We value your feedback</string>
+    <string name="prompt_recommend">Would you like to recommend this app to a friend?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="maybe">Maybe</string>
+    <string name="prompt_hobbies">Please select your hobbies:</string>
+    <string name="guitar">Guitar</string>
+    <string name="football">Football</string>
+    <string name="singing">Singing</string>
+    <string name="chess">Chess</string>
+    <string name="horseback_riding">Horseback Riding</string>
+    <string name="reading">Reading</string>
+    <string name="prompt_frequency">Please select the frequency of your newsletter:</string>
+    <string name="daily">Daily</string>
+    <string name="weekly">Weekly</string>
+    <string name="monthly">Monthly</string>
+    <string name="never">Never</string>
+    <string-array name="frequency_array">
+        <item>@string/daily</item>
+        <item>@string/weekly</item>
+        <item>@string/monthly</item>
+        <item>@string/never</item>
+    </string-array>
+    <string name="prompt_name">Name:</string>
+    <string name="prompt_email">Email:</string>
+    <string name="prompt_phone_number">Phone Number:</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+    <string name="verification">Please verify your details:</string>
+    <string name="recommendation">Recommendation:</string>
+    <string name="hobbies">Selected Hobbies:</string>
+    <string name="frequency">Newsletter Frequency:</string>
+    <string name="thanks">Thank you for your feedback!</string>
+    <string name="score">Credit Score:</string>
+    <string name="done">Done</string>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FeedbackApp</string>
+    <string name="title">Nous apprécions vos commentaires</string>
+    <string name="prompt_recommend">Voudriez-vous recommander cette application à un ami?</string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+    <string name="maybe">Peut être</string>
+    <string name="prompt_hobbies">Veuillez choisir vos loisirs:</string>
+    <string name="guitar">Guitare</string>
+    <string name="football">Football</string>
+    <string name="singing">En Chantant</string>
+    <string name="chess">Échecs</string>
+    <string name="horseback_riding">Monter à Cheval</string>
+    <string name="reading">En Train de Lire</string>
+    <string name="prompt_frequency">Veuillez sélectionner la fréquence de votre newsletter:</string>
+    <string name="daily">Du Quotidien</string>
+    <string name="weekly">Hebdomadaire</string>
+    <string name="monthly">Mensuelle</string>
+    <string name="never">Jamais</string>
+    <string-array name="frequency_array">
+        <item>@string/daily</item>
+        <item>@string/weekly</item>
+        <item>@string/monthly</item>
+        <item>@string/never</item>
+    </string-array>
+    <string name="prompt_name">Prénom:</string>
+    <string name="prompt_email">Email:</string>
+    <string name="prompt_phone_number">Numéro de Téléphone:</string>
+    <string name="cancel">Annuler</string>
+    <string name="submit">Soumettre</string>
+    <string name="recommendation">Recommandation:</string>
+    <string name="verification">Veuillez vérifier vos coordonnées:</string>
+    <string name="hobbies">Loisirs Sélectionnés:</string>
+    <string name="frequency">Fréquence du Bulletin:</string>
+    <string name="thanks">Merci pour votre avis!</string>
+    <string name="score">Pointage de Crédit:</string>
+    <string name="done">Terminé</string>
+</resources>
