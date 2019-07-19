@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Week8ICE</string>
+    <string name="height">Height (metres)</string>
+    <string name="weight">Weight (kilograms)</string>
+    <string name="get_bmi">Get BMI</string>
+    <string name="dialog">Dialog</string>
+</resources>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SharedPreferencesExample</string>
+    <string name="title">Shared Preferences Example</string>
+    <string name="key">Key</string>
+    <string name="value">Value</string>
+    <string name="save">Save</string>
+    <string name="enter_key">Enter the Key</string>
+    <string name="read">Read Data from Preferences</string>
+</resources>
