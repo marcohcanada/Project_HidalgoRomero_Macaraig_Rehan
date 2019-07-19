@@ -97,6 +97,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         startActivity(mainIntent);
     }
 
+    //comment
     private void resetWidgets() {
         edtUsername.setText("");
         edtPassword.setText("");
