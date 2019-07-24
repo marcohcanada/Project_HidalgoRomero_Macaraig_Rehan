@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Project_HidalgoRomero_Macaraig_Rehan</string>
+    <string name="app_name">Assessment App</string>
     <string name="select">Please Select an Option:</string>
     <string name="enter_new_record">Enter New Record</string>
     <string name="previous_records">Display Previous Records</string>

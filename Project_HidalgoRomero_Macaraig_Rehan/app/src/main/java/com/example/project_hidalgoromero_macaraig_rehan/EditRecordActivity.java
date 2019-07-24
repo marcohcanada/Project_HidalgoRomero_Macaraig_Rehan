@@ -53,7 +53,7 @@ public class EditRecordActivity extends AppCompatActivity implements View.OnClic
     }
 
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == 1) {
             if (resultCode == Activity.RESULT_OK) {
                 String studentIDAsString = data.getStringExtra("STUDENT ID");

@@ -2,6 +2,7 @@ package com.example.project_hidalgoromero_macaraig_rehan;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -20,6 +21,8 @@ public class AllRecordsActivity extends AppCompatActivity implements View.OnClic
     ArrayList<Record> recordList;
 
     ListView lvRecords;
+
+    SharedPreferences sharedPreferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,23 +59,42 @@ public class AllRecordsActivity extends AppCompatActivity implements View.OnClic
     private AdapterView.OnItemClickListener lvRecordsOutput = new AdapterView.OnItemClickListener() {
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-            Intent intent = new Intent(AllRecordsActivity.this, EditRecordActivity.class);
+            switch (position) {
+                case 0:
+                    Intent editRecordIntent1 = new Intent(AllRecordsActivity.this, EditRecordActivity.class);
 
+                    Record record1 = (Record) lvRecords.getItemAtPosition(position);
 
-            Record record = (Record) lvRecords.getItemAtPosition(position);
-            Intent studentIDIntent = new Intent();
-            String studentIDAsString = Integer.toString(record.getStudentID());
-            studentIDIntent.putExtra("STUDENT ID", studentIDAsString);
-            setResult(Activity.RESULT_OK, studentIDIntent);
+                    String studentIDAsString1 = Integer.toString(record1.getStudentID());
+                    editRecordIntent1.putExtra("STUDENT ID", studentIDAsString1);
 
-            String scoreAsString = Integer.toString(record.getScore());
-            studentIDIntent.putExtra("SCORE", scoreAsString);
-            setResult(Activity.RESULT_OK, studentIDIntent);
-            studentIDIntent.putExtra("COMMENTS", record.getComments());
-            setResult(Activity.RESULT_OK, studentIDIntent);
+                    setResult(Activity.RESULT_OK, editRecordIntent1);
+                    String scoreAsString1 = Integer.toString(record1.getScore());
+                    editRecordIntent1.putExtra("SCORE", scoreAsString1);
+                    setResult(Activity.RESULT_OK, editRecordIntent1);
+                    editRecordIntent1.putExtra("COMMENTS", record1.getComments());
+                    setResult(Activity.RESULT_OK, editRecordIntent1);
 
-            finish();
+                    startActivityForResult(editRecordIntent1, 1);
+                    break;
+                case 1:
+                    Intent editRecordIntent2 = new Intent(AllRecordsActivity.this, EditRecordActivity.class);
 
+                    Record record2 = (Record) lvRecords.getItemAtPosition(position);
+
+                    String studentIDAsString2 = Integer.toString(record2.getStudentID());
+                    editRecordIntent2.putExtra("STUDENT ID", studentIDAsString2);
+                    setResult(Activity.RESULT_OK, editRecordIntent2);
+
+                    String scoreAsString2 = Integer.toString(record2.getScore());
+                    editRecordIntent2.putExtra("SCORE", scoreAsString2);
+                    setResult(Activity.RESULT_OK, editRecordIntent2);
+                    editRecordIntent2.putExtra("COMMENTS", record2.getComments());
+                    setResult(Activity.RESULT_OK, editRecordIntent2);
+
+                    startActivityForResult(editRecordIntent2, 1);
+                    break;
+            }
         }
     };
 
@@ -81,5 +103,7 @@ public class AllRecordsActivity extends AppCompatActivity implements View.OnClic
         recordList.add(record1);
         Record record2 = new Record(564, 9, "Very Good");
         recordList.add(record2);
+
+        //String value = sharedPreferences.getString("BTN_SAVE_RECORD", "");
     }
 }

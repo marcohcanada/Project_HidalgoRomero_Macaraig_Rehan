@@ -71,12 +71,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.rdo_new_record:
                 Intent newRecordIntent = new Intent(this, NewRecordActivity.class);
                 startActivity(newRecordIntent);
+                break;
             case R.id.rdo_previous_records:
                 Intent allRecordsIntent = new Intent(this, AllRecordsActivity.class);
                 startActivity(allRecordsIntent);
+                break;
             case R.id.rdo_logout:
                 Intent loginIntent = new Intent(this, LoginActivity.class);
                 startActivity(loginIntent);
+                break;
         }
     }
 

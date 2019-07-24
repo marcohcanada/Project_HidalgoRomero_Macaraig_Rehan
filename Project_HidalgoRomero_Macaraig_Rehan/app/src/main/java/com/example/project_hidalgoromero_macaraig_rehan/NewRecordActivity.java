@@ -1,6 +1,8 @@
 package com.example.project_hidalgoromero_macaraig_rehan;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -22,6 +24,8 @@ public class NewRecordActivity extends AppCompatActivity implements View.OnClick
     Button btnBack;
     Button btnSaveRecord;
 
+    SharedPreferences sharedPreferences;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,18 +41,18 @@ public class NewRecordActivity extends AppCompatActivity implements View.OnClick
             @Override
             public void onProgressChanged(SeekBar sbScore, int progresValue, boolean fromUser) {
                 progress = progresValue;
-                Toast.makeText(getApplicationContext(), "Changing seekbar's progress", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Changing SeekBar's progress", Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onStartTrackingTouch(SeekBar sbScore) {
-                Toast.makeText(getApplicationContext(), "Started tracking seekbar", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Started tracking SeekBar", Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onStopTrackingTouch(SeekBar sbScore) {
                 tvScore.setText("Score: " + progress + "/" + sbScore.getMax());
-                Toast.makeText(getApplicationContext(), "Stopped tracking seekbar", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Stopped tracking SeekBar", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -71,16 +75,20 @@ public class NewRecordActivity extends AppCompatActivity implements View.OnClick
         btnBack.setOnClickListener(this);
         btnSaveRecord = findViewById(R.id.btn_save_record);
         btnSaveRecord.setOnClickListener(this);
+
+        sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this.getBaseContext());
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn_back:
-                Intent mainIntent = new Intent(this, MainActivity.class);
-                startActivity(mainIntent);
+                Intent mainBackIntent = new Intent(this, MainActivity.class);
+                startActivity(mainBackIntent);
             case R.id.btn_save_record:
-
+                Intent mainSaveRecordIntent = new Intent(this, MainActivity.class);
+                sharedPreferences.edit().putString("BTN_SAVE_RECORD", btnSaveRecord.getText().toString());
+                startActivity(mainSaveRecordIntent);
         }
     }
 
